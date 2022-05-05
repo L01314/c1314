@@ -1,16 +1,16 @@
 #include<stdio.h>
-int zz(int a,int b)
+long long  zz(long long  a,long long b)
 {
 	return b==0?a:zz(b,a%b);
 }
 int main()
 {
-	int x,y,z;
-	while(~scanf("%d%d",&x,&y))
+	long long  x,y,z;
+ scanf("%lld%lld",&x,&y);
 	 
 	{
 			z=zz(x,y);
- printf("%d",z);
+ printf("%lld %lld ",z,x*y/z);
 }
 	 return 0; 
 }
